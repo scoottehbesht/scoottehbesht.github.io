@@ -89,18 +89,24 @@ table {
 .one div{
 position: absolute;
 border: 5px solid yellow;
-bottom: 0;
-width: 100%;
+top: 15px;
+right: 15px;
+width: 150px;
 color: red;
 background: rgba(59, 59, 59, 0.9);
 border-radius: 10px;
+}
+.one div:hover{
+    transform: rotateY(180deg);
+  backface-visibility: hidden;
 }
 
 .two div{
 position: absolute;
 border: 5px dashed white;
-bottom: 0;
-width: 100%;
+bottom: 15px;
+right: 15px;
+width: 150px;
 color: yellow;
 background: rgba(59, 59, 59, 0.9);
 border-radius: 10px;
@@ -109,8 +115,9 @@ border-radius: 10px;
 .three div{
 position: absolute;
 border: 5px solid green;
-bottom: 0px;
-width: 100%;
+bottom: 15px;
+left: 15px;
+width: 150px;
 color: orange;
 background: rgba(59, 59, 59, 0.9);
 border-radius: 10px;
@@ -119,11 +126,12 @@ border-radius: 10px;
 .four div{
 position: absolute;
 border: 5px dashed orange;
-width: 100%;
+width: 150px;
 color: pink;
 background: rgba(59, 59, 59, 0.9);
 border-radius: 10px;
-bottom: 0;
+top: 15px;
+left: 15px;
 }
 .one img{
 width: 100%;
@@ -143,4 +151,15 @@ color: blue;
 }
 header img{
   width: 33%;
+}
+div{
+  font-size: 30px;
+}
+
+@media screen and (max-width:500px){
+  .one div, .two div, .three div, .four div{
+    width: 100%;
+    font-size: 20px;
+    bottom: 0;
+  }
 }

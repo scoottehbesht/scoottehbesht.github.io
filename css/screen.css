@@ -98,7 +98,6 @@ border-radius: 10px;
 }
 .one div:hover{
     transform: rotateY(180deg);
-  backface-visibility: hidden;
 }
 
 .two div{

@@ -1,0 +1,158 @@
+@import "reset";
+
+body{
+  font-size: 20px;
+  line-height: 21px;
+  background: lighten(cornflowerblue,25%);
+}
+
+a {
+  color: #800000;
+}
+
+    .pure-menu-horizontal{
+    text-align: center;
+  }
+
+    .pure-grid{
+    font-family: "Oswald";
+}
+// NAV
+
+    .nav li {
+    border-bottom: 3px solid #333;
+}
+
+    .home li.home{
+    border-color: blue;
+}
+
+    .performances li.performances{
+    border-color: blue;
+}
+
+ul{
+    font-family: "Oswald";
+}
+
+%pootis {
+    border-radius: 10px;
+    width: 30%;
+}
+
+p{
+    font-family: "Roboto";
+}
+
+    .pure-menu-heading{
+    font-family: "Oswald"
+}
+
+.hero{
+    color: white;
+    font-family: "Oswald";
+    background: url(/img/btb011.jpg);
+    text-align: center;
+    background-position: center;
+    width: 100%;
+    height: 417px;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 200px;
+    letter-spacing: 20px;
+    border-radius: 10px;
+}
+
+.about{
+position: relative;
+width: 100%;
+text-align: center;
+margin: 0 auto;
+    p{
+  width: 750px;
+  margin: 0 auto;
+    }
+    .isa{
+    font-family: "Oswald";
+    }
+    .headshot {
+    @extend %pootis;
+    margin-bottom: 15px;
+    }
+    .imagedos{
+    @extend %pootis;
+    margin-top: 15px;
+    }
+}
+
+footer{
+    background: gray;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+        p{
+            font-family: "Oswald";
+        }
+}
+
+h2{
+
+}
+
+@media screen and (max-width:500px){
+  
+
+  .wrap{
+    background-size: 300px;
+    background-color: white;
+    background-repeat: no-repeat;
+  }
+  .hero{
+    color: white;
+    font-family: "Oswald";
+    background: url(/img/btb011.jpg);
+    text-align: center;
+    height: 250px;
+    padding-top: 100px;
+    width: 100%;
+    background-size: 100% 100%;
+    letter-spacing: 5px;
+  }
+
+  h2 {
+  border-bottom: 1px solid #999;
+  padding-bottom: .5em;
+}
+
+    p {
+      font-family: "Roboto";
+    }
+
+    footer{
+        background-color: gray;
+        border-radius: 10px;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        .copy{
+        font-family: "Oswald";
+        }
+    }
+
+    ul{
+        position: absolute;
+        right: 0;
+    }
+
+    .aboutcont{
+        p{
+            width: 100%;
+        }
+        .headshot, .imagedos{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+    }
+}

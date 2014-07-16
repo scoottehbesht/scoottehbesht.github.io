@@ -18,17 +18,6 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
-header nav{
-  display: inline-block;
-}
-*{
-  font-family: "helvetica";
-}
-
-html{
-  height: 100%;
-  width: 100%;
-}
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -36,28 +25,8 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-.one{
-  position: relative;
-  width: 100%;
-}
-
-.two{
-  position: relative;
-  width: 100%;
-}
-
-.three{
-  position: relative;
-  width: 100%;
-}
-
-.four{
-  position: relative;
-  width: 100%;
-}
 body {
   line-height: 1;
-  height:100%;
 }
 
 ol, ul {
@@ -86,79 +55,149 @@ table {
   background-position: 0 0;
 }
 
-.one div{
-position: absolute;
-border: 5px solid yellow;
-top: 15px;
-right: 15px;
-width: 150px;
-color: red;
-background: rgba(59, 59, 59, 0.9);
-border-radius: 10px;
-}
-.one div:hover{
-    transform: rotateY(180deg);
+body {
+  font-size: 20px;
+  line-height: 21px;
+  background: #d6e3fa;
 }
 
-.two div{
-position: absolute;
-border: 5px dashed white;
-bottom: 15px;
-right: 15px;
-width: 150px;
-color: yellow;
-background: rgba(59, 59, 59, 0.9);
-border-radius: 10px;
+a {
+  color: #800000;
 }
 
-.three div{
-position: absolute;
-border: 5px solid green;
-bottom: 15px;
-left: 15px;
-width: 150px;
-color: orange;
-background: rgba(59, 59, 59, 0.9);
-border-radius: 10px;
+.pure-menu-horizontal {
+  text-align: center;
 }
 
-.four div{
-position: absolute;
-border: 5px dashed orange;
-width: 150px;
-color: pink;
-background: rgba(59, 59, 59, 0.9);
-border-radius: 10px;
-top: 15px;
-left: 15px;
+.pure-grid {
+  font-family: "Oswald";
 }
-.one img{
-width: 100%;
+
+.nav li {
+  border-bottom: 3px solid #333;
 }
-.two img{
+
+.home li.home {
+  border-color: blue;
+}
+
+.performances li.performances {
+  border-color: blue;
+}
+
+ul {
+  font-family: "Oswald";
+}
+
+.about .headshot, .about .imagedos {
+  border-radius: 10px;
+  width: 30%;
+}
+
+p {
+  font-family: "Roboto";
+}
+
+.pure-menu-heading {
+  font-family: "Oswald";
+}
+
+.hero {
+  color: white;
+  font-family: "Oswald";
+  background: url(/img/btb011.jpg);
+  text-align: center;
+  background-position: center;
+  width: 100%;
+  height: 417px;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 200px;
+  letter-spacing: 20px;
+  border-radius: 10px;
+}
+
+.about {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+.about p {
+  width: 750px;
+  margin: 0 auto;
+}
+.about .isa {
+  font-family: "Oswald";
+}
+.about .headshot {
+  margin-bottom: 15px;
+}
+.about .imagedos {
+  margin-top: 15px;
+}
+
+footer {
+  background: gray;
+  bottom: 0;
+  height: 60px;
   width: 100%;
 }
-.three img{
-  width: 100%;
-}
-.four img{
-  width: 100%;
+footer p {
+  font-family: "Oswald";
 }
 
-div:first-of-type h2{
-color: blue;
-}
-header img{
-  width: 33%;
-}
-div{
-  font-size: 30px;
-}
+@media screen and (max-width: 500px) {
+  .wrap {
+    background-size: 300px;
+    background-color: white;
+    background-repeat: no-repeat;
+  }
 
-@media screen and (max-width:500px){
-  .one div, .two div, .three div, .four div{
+  .hero {
+    color: white;
+    font-family: "Oswald";
+    background: url(/img/btb011.jpg);
+    text-align: center;
+    height: 250px;
+    padding-top: 100px;
     width: 100%;
-    font-size: 20px;
+    background-size: 100% 100%;
+    letter-spacing: 5px;
+  }
+
+  h2 {
+    border-bottom: 1px solid #999;
+    padding-bottom: .5em;
+  }
+
+  p {
+    font-family: "Roboto";
+  }
+
+  footer {
+    background-color: gray;
+    border-radius: 10px;
+    right: 0;
     bottom: 0;
+    width: 100%;
+    height: 50px;
+  }
+  footer .copy {
+    font-family: "Oswald";
+  }
+
+  ul {
+    position: absolute;
+    right: 0;
+  }
+
+  .aboutcont p {
+    width: 100%;
+  }
+  .aboutcont .headshot, .aboutcont .imagedos {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
   }
 }

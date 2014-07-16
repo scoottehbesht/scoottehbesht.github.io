@@ -160,7 +160,8 @@ footer p {
   font-family: "Roboto";
 }
 .container span {
-  font-weight: bold;
+  font-size: 15px;
+  font-family: "Roboto";
 }
 .container h3 {
   font-family: "Oswald";

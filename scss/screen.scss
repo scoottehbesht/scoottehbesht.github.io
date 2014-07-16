@@ -105,15 +105,13 @@ footer{
 
 .container{
     line-height: 2em;
-    li{
-        font-family: "Roboto";
-    }
     span{
-        font-weight: bold;
+        font-size: 20px;
+        font-family: "Roboto";
     }
     h3{
         font-family: "Oswald";
-        font-size: 25px;
+        font-size: 30px;
     }
 }
 
@@ -179,12 +177,14 @@ footer{
     }
 
     .phist{
-        li{
-        font-size: 10px;
-        margin: 0 auto;
-    }
         h2{
             font-size: 20px;
+        }
+        h3{
+            font-size: 25px;
+        }
+        span{
+            font-size: 15px;
         }
     }
 }

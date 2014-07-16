@@ -156,16 +156,13 @@ footer p {
 .container {
   line-height: 2em;
 }
-.container li {
-  font-family: "Roboto";
-}
 .container span {
-  font-size: 15px;
+  font-size: 20px;
   font-family: "Roboto";
 }
 .container h3 {
   font-family: "Oswald";
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .phist {
@@ -228,11 +225,13 @@ footer p {
     border-radius: 10px;
   }
 
-  .phist li {
-    font-size: 10px;
-    margin: 0 auto;
-  }
   .phist h2 {
     font-size: 20px;
+  }
+  .phist h3 {
+    font-size: 25px;
+  }
+  .phist span {
+    font-size: 15px;
   }
 }

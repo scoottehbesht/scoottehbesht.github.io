@@ -118,6 +118,7 @@ p {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   border-radius: 10px;
+  transition: all 500ms linear;
 }
 
 .about {
@@ -148,7 +149,6 @@ p {
 
 .hero:hover {
   font-size: 60px;
-  transition-duration: 1s;
 }
 
 footer {

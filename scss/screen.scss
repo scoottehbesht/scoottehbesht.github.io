@@ -70,6 +70,7 @@ p{
     letter-spacing: 20px;
     font-size: 50px;
     @include border-radius(10px);
+    transition: all 500ms linear;
 }
 
 
@@ -102,7 +103,6 @@ p{
 
 .hero:hover{
 font-size: 60px;
-transition-duration: 1s;
 }
 
 footer{

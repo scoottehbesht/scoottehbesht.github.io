@@ -1,9 +1,11 @@
 @import "reset";
 
+$bloo: #43B6D0;
+
 body{
   font-size: 20px;
   line-height: 21px;
-  background: lighten(cornflowerblue,25%);
+  background: lighten($bloo, 35%);
 }
 
 a {
@@ -31,6 +33,13 @@ a {
     border-color: blue;
 }
 
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
 ul{
     font-family: "Oswald";
 }
@@ -45,14 +54,13 @@ p{
 }
 
     .pure-menu-heading{
-    font-family: "Oswald"
+    font-family: "Oswald";
 }
 
 .hero{
     color: white;
     font-family: "Oswald";
     background: url(/img/btb011.jpg);
-    text-align: center;
     background-position: center;
     width: 100%;
     height: 417px;
@@ -60,29 +68,42 @@ p{
     text-align: center;
     padding-top: 200px;
     letter-spacing: 20px;
-    border-radius: 10px;
+    font-size: 50px;
+    @include border-radius(10px);
 }
 
+
 .about{
-position: relative;
-width: 100%;
-text-align: center;
-margin: 0 auto;
-    p{
-  width: 750px;
-  margin: 0 auto;
-    }
-    .isa{
-    font-family: "Oswald";
-    }
-    .headshot {
-    @extend %pootis;
-    margin-bottom: 15px;
-    }
-    .imagedos{
-    @extend %pootis;
-    margin-top: 15px;
-    }
+    padding-top: 75px;
+    padding-bottom:px;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+        p{
+      width: 750px;
+      margin: 0 auto;
+        }
+        .isa{
+        font-family: "Oswald";
+        text-align: center;
+        }
+        .headshot {
+        @extend %pootis;
+        margin-bottom: 15px;
+        }
+        .imagedos{
+        @extend %pootis;
+        margin-top: 15px;
+        }
+        .headshot, .imagedos{
+          display: block;
+    margin-left: auto;
+    margin-right: auto }
+}
+
+.hero:hover{
+font-size: 60px;
+transition-duration: 1s;
 }
 
 footer{
@@ -101,8 +122,24 @@ footer{
     letter-spacing: 10px;
     color: gray;
     }
+        .phisttitle{
+                color: white;
+              font-family: "Oswald";
+              background: url(/img/newbtb.jpg);
+              text-align: center;
+              background-position: center;
+              width: 100%;
+              height: 300px;
+              background-repeat: no-repeat;
+              text-align: center;
+              padding-top: 150px;
+              letter-spacing: 20px;
+              -webkit-border-radius: 10px;
+              -moz-border-radius: 10px;
+              -ms-border-radius: 10px;
+              border-radius: 10px;
+             }
 }
-
 .container{
     line-height: 2em;
     span{
@@ -129,14 +166,18 @@ footer{
   }
   .hero{
     color: white;
+    text-align: center;
     font-family: "Oswald";
     background: url(/img/btb011.jpg);
-    text-align: center;
     height: 250px;
     padding-top: 100px;
     width: 100%;
     background-size: 100% 100%;
     letter-spacing: 5px;
+    font-size: 20px;
+  }
+  .hero:hover{
+    font-size: 25px;
   }
 
   h2 {
@@ -164,18 +205,20 @@ footer{
         position: absolute;
         right: 0;
     }
-
+    .about{
+        text-align: center;
+        margin-top: 50px;
+    }
     .aboutcont{
         p{
             width: 100%;
         }
         .headshot, .imagedos{
-            width: 100%;
-            height: 100%;
-            border-radius: 10px;
-        }
+            display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;}
     }
-
     .phist{
         h2{
             font-size: 20px;
@@ -185,6 +228,10 @@ footer{
         }
         span{
             font-size: 15px;
+        }
+        .phisttitle{
+            letter-spacing: 8px;
+            border-bottom: none;
         }
     }
 }
